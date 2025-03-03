@@ -1,0 +1,29 @@
+Theory Questions and Answers
+
+Difference between library and Framework?
+
+Both libraries and frameworks are pre-written code that help simplify complex or common tasks, making development more efficient. However, the key difference between them lies in the concept of Inversion of Control (IoC).
+
+When using a library, the developer has control over the flow of the application. They can call specific functions or methods from the library whenever and wherever they need them, without being restricted by the library's internal structure. In other words, the developer is in charge of when and how the library is used.
+
+On the other hand, a framework dictates the flow of control. Developers must adhere to the conventions and protocols established by the framework, providing code in the structure it expects. The framework often calls the developer’s code at certain points, essentially controlling the overall flow and architecture of the application. This inversion of control means that the framework is in charge, and developers write code that fits into the framework's predetermined structure and workflow.
+
+In summary, while libraries give developers more freedom, frameworks enforce a specific structure and dictate the flow of the program. 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+What is the difference between React and ReactDOM?
+
+Both React and ReactDOM are developed by the same team. Initially, up until React v0.14, the React and ReactDOM libraries were bundled together in a single package. However, the team later realized that React itself was not directly responsible for rendering to the browser. Instead, ReactDOM handled the actual rendering of React components into the DOM.
+
+Recognizing this distinction, the team decided to split the two functionalities into separate libraries. This separation allowed React to focus purely on the creation and management of components, while ReactDOM took on the responsibility of rendering those components in the browser. As a result, React and ReactDOM were delivered as two distinct packages, offering better modularity and clarity in their respective roles.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+What is the difference between using defer and async in Script tag?
+
+When we include a script tag with async attribute, it tells the browser to download script asynchronously without blocking HTML Parsing. Once download is completed, the script is executed even before HTML has finished parsing.
+
+Whereas, with defer attribute the script is downloaded from the network without blocking HTML parsing but it is executed once the HTML parsing is completed.
+
+
+
+
