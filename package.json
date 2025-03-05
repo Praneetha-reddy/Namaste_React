@@ -1,0 +1,28 @@
+{
+  "name": "episode-2",
+  "version": "1.0.0",
+  
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Praneetha-reddy/Namaste_React.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Praneetha-reddy/Namaste_React/issues"
+  },
+  "homepage": "https://github.com/Praneetha-reddy/Namaste_React#readme",
+  "description": "",
+  "devDependencies": {
+    "@types/react-dom": "^19.0.4",
+    "parcel": "^2.13.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}

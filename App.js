@@ -1,3 +1,5 @@
+import React from "react"
+import {createRoot} from "react-dom/client"
 /*
 *
 *
@@ -19,7 +21,7 @@ const heading = React.createElement(
         [React.createElement(
             'h1', 
             {}, 
-            'Hello World!'), 
+            'Hello Praneetha!!'), 
         React.createElement(
             'h2', 
             {}, 
@@ -35,5 +37,5 @@ const heading = React.createElement(
             'h2', 
             {}, 
             'Hello World!')])]); //Object
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = createRoot(document.getElementById('root'));
 root.render(heading); //Converts heading object into h1 tag
