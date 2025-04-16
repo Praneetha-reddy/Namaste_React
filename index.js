@@ -14,6 +14,26 @@ const element = React.createElement(
 //JSX - It is syntactic sugar for React.createElement
 //JS engine does not understand JSX, it needs to be converted to JS using Babel.
 //JSX is transpiled to React.createElement calls by Babel.
-const heading = <h1>Namaste React using JSX</h1>
+
+//Functional Components
+const Title = () => {
+    return <h1>Namaste React using JSX</h1>;
+};
+
+const HeadingComponent = () => {
+    return (
+        <div id="parent">
+            <div id="child1">
+                {Title()}
+                <Title/>
+                <Title></Title>
+                <h2>Namaste React using functional component</h2>
+            </div>
+        </div>
+    );
+}
+
+const heading = <h1>Namaste React using JSX</h1>;
+console.log(heading);
 const rootReact = ReactDOM.createRoot(document.getElementById('root'));
-rootReact.render(heading);
+rootReact.render(<HeadingComponent/>);
